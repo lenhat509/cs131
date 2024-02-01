@@ -1,0 +1,103 @@
+    1  ls
+    2  ls -la
+    3  cd /
+    4  ls
+    5  cd ~
+    6  ls
+    7  ifconfig
+    8  passwd
+    9  passwrd
+   10  passwd
+   11  ls
+   12  uname
+   13  uname -v
+   14  uname -a
+   15  uname -os
+   16  uname -A
+   17  uname -a
+   18  uname -m
+   19  ping 172.20.25.9
+   20  gcc
+   21  exit
+   22  ls
+   23  cd /
+   24  ls
+   25  cd home
+   26  ls
+   27  cd ..
+   28  ls
+   29  cd mnt
+   30  ls
+   31  ls -la
+   32  cd scratch/
+   33  ls
+   34  cd ~
+   35  echo ~
+   36  cd etc
+   37  cd/ etc
+   38  cd /etc
+   39  ls
+   40  cat os-release 
+   41  file passwd
+   42  cat passwd
+   43  ls
+   44  file passwd-
+   45  cat passwd-
+   46  ls
+   47  ls | grep ".*pass.*"
+   48  ls | grep "%pass%"
+   49  ls
+   50  ls ad.*
+   51  ls' ad.*'
+   52  ls 'ad.*'
+   53  cd /
+   54  ls
+   55  find . -n "home"
+   56  find . -d "home"
+   57  find .  "home"
+   58  find . -D "home"
+   59  man ls
+   60  ls 
+   61  ls -lr
+   62  ls -ltr
+   63  man ls
+   64  ls
+   65  ls | grep "*home*"
+   66  ls | grep ".*home.*"
+   67  ls | grep ".+home.+"
+   68  ls | grep ".*home.+"
+   69  ls | grep ".*home.\+"
+   70  ls
+   71  ls ?{6}.text
+   72  ls ?{6}.txt
+   73  ls ?{6}
+   74  ls ?{4}
+   75  ls ?(4)
+   76  ls ?\{4\}
+   77  ls ?
+   78  ls ?//
+   79  ls ???
+   80  ls home*
+   81  man lis
+   82  man ls
+   83  ls -d home*
+   84  man tar
+   85  cd ~
+   86  ls
+   87  history
+   88  wget www.github.com
+   89  ls
+   90  git
+   91  ls
+   92  cat index.html 
+   93  rm index.html 
+   94  ls
+   95  git clone https://github.com/lenhat509/cs131.git
+   96  ls
+   97  cd cs131/
+   98  ls
+   99  mkdir Worksheet1
+  100  ls
+  101  cd Worksheet1/
+  102  ls
+  103  history > cmds.log
