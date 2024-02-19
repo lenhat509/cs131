@@ -1,0 +1,20 @@
+    1  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+    2  ls
+    3  head 'Global YouTube Statistics.csv' 
+    4  grep 'United States' 'Global YouTube Statistics.csv' 
+    5  grep 'Music' 'Global YouTube Statistics.csv' 
+    6  grep 'Music' 'Global YouTube Statistics.csv' | wc -lw
+    7  grep 'Music' 'Global YouTube Statistics.csv' | wc -lw > counts.txt
+    8  cat counts.txt 
+    9  vi counts.txt 
+   10  cat counts.txt 
+   11  man wc
+   12  rm counts.txt 
+   13  grep 'Music' 'Global YouTube Statistics.csv' | wc -l > counts.txt
+   14  cat counts.txt 
+   15  grep 'Music' 'Global YouTube Statistics.csv' | wc -w >> counts.txt
+   16  cat counts.txt 
+   17  vi counts.txt 
+   18  cat counts.txt 
+   19  history
+   20  history > cmds.log
