@@ -1,0 +1,44 @@
+Q1.
+    1  mkdir Assignment1
+    2  cd Assignment1/
+Q2.
+    3  echo $SHELL
+    4  touch Assignment1.txt
+    5  echo $SHELL >> Assignment1.txt 
+Q2.    
+    6  echo ~ >> Assignment1.txt 
+Q3.
+    7  id
+Q4.
+    8  mkdir myDir
+    9  ls myDir/
+   10  ls myDir
+   11  ls -l myDir
+   12  ls -l
+   13  chmod u-w myDir
+   14  ls -l
+   15  cd myDir
+   16  ls
+   17  ls -l
+   18  touch file.txt
+   19  cd ..
+   20  ls
+Q5.
+   21  mkdir myDir2 myDir3
+Q6.   
+   22  cd myDir2
+   23  touch myFile.txt
+   24  mv myFile.txt ../myDir3/myFile.txt
+   25  ls ../myDir3
+Q6.
+   26  man free
+   27  free -m
+Q9.
+   28  cat /etc/os-release 
+Q10.
+   29  ls -l /etc/os-release 
+
+   30  cd ..
+   31  ls
+   32  vi Assignment1.txt 
+   33  history > cmds.log

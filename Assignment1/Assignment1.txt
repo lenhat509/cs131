@@ -1,0 +1,24 @@
+1. 
+- mkdir Assignment1
+2.
+- /bin/bash
+- CMD: echo $SHELL >> Assignment1.txt
+2.
+- /mnt/scratch/FA23_CS131_Ashish/nhatsp24
+- CMD: echo ~ >> Assignment1.txt
+3.
+- UID: 1187, Groups: nhatsp24,S77
+- CMD: id
+4.
+- Can 'cd', 'ls', 'ls -l' but can not create a file
+5.
+- mkdir myDir2 myDir3
+6.
+- mv myFile.txt ../myDir3/myFile.txt
+6. 
+- Memory: 71367 mebibytes
+9.
+- OS Version: 8.6 (Ootpa)
+- /etc/os-release contains the OS information
+10.
+- All users have full permission (r,w,x) to /etc/os-release file
