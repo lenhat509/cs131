@@ -1,0 +1,62 @@
+1.
+ a. List all files (not directories) in /etc recursively. Store standard error to two.txt and standard output one.txt.
+ b. one.txt contains the list of all files in /etc. two.txt contains a list of files which I don't have access to.
+
+2.
+ As per the Dataset, Top 3 [Month, Year] with the most number of YouTube channels created were :
+ 1. March,2006 with 15 channels  
+ 2. July,2014 with 13 channels 
+ 3. August,2014 with 12 channels
+ The command(s) used to find it was this: cut -f20-21 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -rn
+ 
+ cut command is used to extract month and year fields on each line using -f flag. Years are on 20th column and months are on the 21st column. Columns are seperated by a comma which is specified by -d flag.
+ Then, grep is used to filter out the header line and nan values. -E flag allows us to use extended regex.
+ Then, sort command can group identical 'year,month' together and uniq is used to get unique strings and their occurrences with -C flag.
+ Finally, sort is used again to arrange them in the descending order of occurrences using flag -rn (n refers to numerical values).
+
+3.
+ Command: ps -U nhatsp24
+ 
+    PID TTY          TIME CMD
+3376143 ?        00:00:04 systemd
+3376145 ?        00:00:00 (sd-pam)
+3376153 ?        00:00:00 sshd
+3376155 pts/32   00:00:00 bash
+3409815 pts/32   00:00:00 ps
+
+4.
+ a.
+ b.
+    PID TTY          TIME CMD
+3376143 ?        00:00:04 systemd
+3376145 ?        00:00:00 (sd-pam)
+3376153 ?        00:00:00 sshd
+3376155 pts/32   00:00:00 bash
+3411020 ?        00:00:00 sshd
+3411021 pts/0    00:00:00 bash
+3411263 pts/32   00:00:00 vim
+3412288 pts/0    00:00:00 ps
+
+ There is a vim process running with pid = 3411263.
+
+ c.
+ d. The vim process is gone because it was terminated by exiting.
+
+    PID TTY          TIME CMD
+3376143 ?        00:00:04 systemd
+3376145 ?        00:00:00 (sd-pam)
+3376153 ?        00:00:00 sshd
+3376155 pts/32   00:00:00 bash
+3411020 ?        00:00:00 sshd
+3411021 pts/0    00:00:00 bash
+3412582 pts/0    00:00:00 ps
+
+5.
+ init is the first process initiated by the kernel with pid = 1
+ Command: ps aux | grep 'systemd'
+
+6.
+ ps aux prints running processes in the system from all users.
+ The option 'a' is for listing all processes from all users.
+ The option 'u' is for user-friendly format.
+ The option 'x' is for listing all processes that are not created from terminal.

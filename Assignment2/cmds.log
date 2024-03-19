@@ -1,0 +1,82 @@
+    1  mkdir Assignment2
+    2  ls
+    3  cd Assigment2
+    4  cd Assignment2
+    5  find /etc -type f > one.txt 2> two.txt
+    6  cat one.txt
+    7  cat two.txt
+    8  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+    9  ls
+   10  head 'Global YouTube Statistics.csv' 
+   11  man uniq
+   12  head 'Global YouTube Statistics.csv' -1
+   13  head 'Global YouTube Statistics.csv' --help
+   14  head 'Global YouTube Statistics.csv' -n -1
+   15  head 'Global YouTube Statistics.csv' -n 1
+   16  man grep
+   17  head 'Global YouTube Statistics.csv' -n 1 | grep -o '[0-9]{4},[A-Za-z]{3}'
+   18  man grep
+   19  head 'Global YouTube Statistics.csv' -n 1 | grep -Po '[0-9]{4}\,[A-Za-z]{3}'
+   20  head 'Global YouTube Statistics.csv' -n 1 | grep -Eo '[0-9]{4},[A-Za-z]{3}'
+   21  head 'Global YouTube Statistics.csv' -n 1 | grep -Po '[0-9]{4},[A-Za-z]{3}'
+   22  head 'Global YouTube Statistics.csv' -n 1 | grep -o "[0-9]{4},[A-Za-z]{3}"
+   23  head 'Global YouTube Statistics.csv' | grep -o '[0-9]{4},[A-Za-z]{3}'
+   24  head 'Global YouTube Statistics.csv' | grep -Eo '[0-9]{4},[A-Za-z]{3}'
+   25  head 'Global YouTube Statistics.csv' | grep -Eo ',[0-9]{4},[A-Za-z]{3},'
+   26  cat 'Global YouTube Statistics.csv' | grep -Eo '[0-9]{4},[A-Za-z]{3},' | sort
+   27  cat 'Global YouTube Statistics.csv' | grep -Eo ',[0-9]{4},[A-Za-z]{3},' | sort
+   28  cat 'Global YouTube Statistics.csv' | grep -Eo '[0-9]{4},[A-Z][a-z]{2},' | sort
+   29  cat 'Global YouTube Statistics.csv' | grep -Eo '[0-9]{4},[A-Z][a-z]{2}' | sort
+   30  cat 'Global YouTube Statistics.csv' | grep -Eo '[0-9]{4},[A-Z][a-z]{2,}' | sort
+   31  cat 'Global YouTube Statistics.csv' | grep -Eo '[0-9]{4},[A-Z][a-z]{2},' | sort
+   32  cat 'Global YouTube Statistics.csv' | grep -Eo '[0-9]{4},[A-Z][a-z]{2},' | sort | uniq
+   33  cat 'Global YouTube Statistics.csv' | grep -Eo '[0-9]{4},[A-Z][a-z]{2},' | sort | uniq -c
+   34  cat 'Global YouTube Statistics.csv' | grep -Eo '[0-9]{4},[A-Z][a-z]{2},' |  uniq -c
+   35  man sort
+   36  man cut
+   37  cut -f 20 -d, 'Global YouTube Statistics.csv' 
+   38  cut -f 20 -d, 'Global YouTube Statistics.csv' | sort
+   39  cut -f 20 -d, 'Global YouTube Statistics.csv' | sort | uniq -c
+   40  cut -f 20 -d, 'Global YouTube Statistics.csv' | sort | uniq -c | sort
+   41  man sort
+   42  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep '[0-9]{4}' | sort | uniq -c | sort
+   43  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort
+   44  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c 
+   45  man uniq
+   46  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -nc 
+   47  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -n
+   48  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -rn
+   49  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort -rnc
+   50  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort -c -rn
+   51  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort -c
+   52  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -rn
+   53  ps -a
+   54  ps -au
+   55  ps -ax
+   56  man ps
+   57  ps -U nhatlesp24
+   58  ps -U nhatsp24
+   59  ls
+   60  touch Assignment2.txt
+   61  ps -U nhatsp24 >> Assignment2.txt 
+   62  vi text.txt
+   63  ps -aux | grep init
+   64  ps aux | grep init
+   65  ps -aux | grep 'init'
+   66  ps1
+   67  ps -1
+   68* ps -1
+   69  ps aux | grep systemd
+   70  history
+   71  history > cmds.log
+   72  ls
+   73  vi Assignment2.txt 
+   74  cut -f 20 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -rn
+   75  cut -f 20 21 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -rn
+   76  cut -f20-21 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -rn
+   77  cut -f20-21 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c
+   78  cut -f20-21 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -rn
+   79  man cut
+   80  cut -f20-21 -d, 'Global YouTube Statistics.csv' | grep -E '[0-9]{4}' | sort | uniq -c | sort -rn
+   81  history
+   82  history > cmds.log
