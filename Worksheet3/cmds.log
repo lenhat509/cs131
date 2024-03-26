@@ -1,0 +1,71 @@
+    1  ls
+    2  mkdir Worksheet3
+    3  cp Assignment2/Global\ YouTube\ Statistics.csv Worksheet3/
+    4  cd Worksheet
+    5  cd Worksheet3
+    6  ls
+    7  head 5 Global\ YouTube\ Statistics.csv 
+    8  head -n 5 Global\ YouTube\ Statistics.csv 
+    9  head -n 1 Global\ YouTube\ Statistics.csv | sed /,/\\n/g
+   10  man sed
+   11  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g
+   12  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk /highest_yearly_earnings/ { print NR }
+   13  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '/highest_yearly_earnings/ { print NR }'
+   14  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '{ print NR }'
+   15* head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '// { print NR }'
+   16  cut -f8,18 -d, Global\ YouTube\ Statistics.csv 
+   17* cut -f8,18 -d, Global\ YouTube\ Statistics.csv | 
+   18  head -n 1 Global\ YouTube\ Statistics.csv | sed /,/\\n/g
+   19  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g
+   20  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | head -n 1 
+   21  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | grep '.*,(United States|India|United Kingdom),.*'
+   22  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | grep -E '.*,(United States|India|United Kingdom),.*'
+   23  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | grep -E -I '.*,(United States|India|United Kingdom),.*'
+   24  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | grep -E -l '.*,(United States|India|United Kingdom),.*'
+   25  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | grep -E -I '.*,(United States|India|United Kingdom),.*'
+   26  man grep
+   27  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | grep .*,(United States|India|United Kingdom),.*
+   28  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | grep .*,\(United States|India|United Kingdom\),.*
+   29  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | grep -e '.*,(United States|India|United Kingdom),.*'
+   30  cut -f2,8,18 -d, Global\ YouTube\ Statistics.csv | grep -E '.*,(United States|India|United Kingdom),.*'
+   31  cat Global\ YouTube\ Statistics.csv | grep 5-Minute Crafts,United Kingdom
+   32  cat Global\ YouTube\ Statistics.csv | grep '5-Minute Crafts,United Kingdom'
+   33  cat Global\ YouTube\ Statistics.csv | grep -e '5-Minute Crafts,United Kingdom'
+   34  cat Global\ YouTube\ Statistics.csv | grep -E '5-Minute Crafts,United Kingdom'
+   35  cat Global\ YouTube\ Statistics.csv | grep 5-Minute\ Crafts,United\ Kingdom
+   36  cat Global\ YouTube\ Statistics.csv | grep '5-Minute Crafts'
+   37  head -n 1 Global\ YouTube\ Statistics.csv
+   38  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '/highest_yearly_earnings/ { print NR }'
+   39  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g 
+   40  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '/highest_monthly_earnings/ { print NR }'
+   41  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -E '.*,(United States|India|United Kingdom),.*'
+   42  ls
+   43  file Global\ YouTube\ Statistics.csv 
+   44  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea '.*,(United States|India|United Kingdom),.*'
+   45  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(United States|India|United Kingdom),.*'
+   46  awk '/Ms Yeah/ {print $0}' Global\ YouTube\ Statistics.csv 
+   47  awk '/The LaBrant Fam/ {print $0}' Global\ YouTube\ Statistics.csv 
+   48  man sort
+   49  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(United States|India|United Kingdom),.*' | sort -k 3
+   50  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(United States|India|United Kingdom),.*' | sort -nk 3
+   51  man sort
+   52  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(United States|India|United Kingdom),.*' | sort -t, -k 3
+   53  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(United States|India|United Kingdom),.*' | sort -t , -k 3
+   54  man sort
+   55  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(United States|India|United Kingdom),.*' | sort -t',' -k3 -n
+   56  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(United States|India|United Kingdom),.*' | sort -t',' -k3 -rn
+   57  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(United States|India|United Kingdom),.*' | sort -t',' -k3 -rn | head -n 1
+   58  cut -f2,8,16 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(United States|India|United Kingdom),.*' | sort -t',' -k3 -rn | head -n 1 > ws3.txt
+   59  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '/#Subscribers/ { print NR }'
+   60  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '/subscribers/ { print NR $0 }'
+   61  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '/subscribers$/ { print NR}'
+   62  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '/categor/ { print NR $0 }'
+   63  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '/category/ { print NR $0 }'
+   64  head -n 1 Global\ YouTube\ Statistics.csv | sed s/,/\\n/g | awk '/category/ { print NR}'
+   65  cut -f2,3,5 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,(Sports|Education|Entertainment),.*' | sort -t',' -k3 -rn
+   66  cut -f2,3,5 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,.*,(Sports|Education|Entertainment)'
+   67  cut -f2,3,5 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,.*,(Sports|Education|Entertainment)' | sort -t',' -k2 -rn
+   68  cut -f2,3,5 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,.*,(Sports|Education|Entertainment)' | sort -t',' -k2 -rn | head -n 1
+   69  cut -f2,3,5 -d, Global\ YouTube\ Statistics.csv | grep -Ea --text '.*,.*,(Sports|Education|Entertainment)' | sort -t',' -k2 -rn | head -n 1 >> ws3.txt 
+   70  vi ws3.txt 
+   71  history > cmds.log

@@ -1,0 +1,5 @@
+1. The highest monthly earner from 3 different countries: United States, the United Kingdom, and India
+DaFuq!?Boom!,United States,9200000
+
+2. The highest subscribed channel from 3 different categories: Sports, Education, and Entertainment
+MrBeast,166000000,Entertainment
